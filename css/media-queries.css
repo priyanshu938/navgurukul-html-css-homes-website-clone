@@ -1,0 +1,78 @@
+/* Small screens and laptops */
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    margin-inline: 3rem;
+  }
+  .home-left {
+    flex-basis: 80%;
+  }
+  .input-search-home {
+    width: 90%;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* iPads, Tablets */
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .home-div {
+    margin-top: 4.5rem;
+    margin-bottom: 0;
+  }
+  .container {
+    margin-inline: 3rem;
+  }
+  .hide {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+  .home-left {
+    flex-basis: 90%;
+  }
+  .home {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+      url("../img/mobile-img.png");
+    padding-block: 2rem;
+  }
+  .home-left p {
+    color: var(--primary-white-color);
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .apartment-head h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 400px) {
+  /* CSS styles for mobile devices */
+  html {
+    font-size: 10px;
+  }
+  nav {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .card-content {
+    padding: 2rem 1.5rem;
+  }
+}
